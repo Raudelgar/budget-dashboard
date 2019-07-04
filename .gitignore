@@ -1,0 +1,6 @@
+.tmp
+node_modules
+.vscode
+
+#Temporary not adding dist/
+dist/
