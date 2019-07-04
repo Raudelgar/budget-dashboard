@@ -1,6 +1,7 @@
 .tmp
 node_modules
 .vscode
+.DS_Store
 
 #Temporary not adding dist/
 dist/
