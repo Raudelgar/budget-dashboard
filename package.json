@@ -4,7 +4,8 @@
   "description": "Budget Dashboard to keep track of your house expenses ",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server":"nodemon server.js"
   },
   "author": "Raudel Garcia",
   "license": "MIT",

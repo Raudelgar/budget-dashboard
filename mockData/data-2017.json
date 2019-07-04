@@ -1,0 +1,1100 @@
+[
+    {
+        "reportid":1, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"Current Month Average House Expenses",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"donut",
+            "pre":"$",
+            "post":"k",
+            "width":450,
+            "height":450,
+            "color":0
+        },
+        "data":[
+            {
+                "lable":"Rent",
+                "value":659.00
+            },
+            {
+                "lable":"Internet",
+                "value":45.56
+            },
+            {
+                "lable":"Energy",
+                "value":60.00
+            },
+            {
+                "lable":"Phone",
+                "value":120.00
+            },
+            {
+                "lable":"Water",
+                "value":35.00
+            },
+            {
+                "lable":"Car Lease",
+                "value":250.00
+            },
+            {
+                "lable":"Grocery",
+                "value":400.00
+            },
+            {
+                "lable":"Gas",
+                "value":80.00
+            },
+            {
+                "lable":"Others",
+                "value":200.00
+            }
+        ]
+    },
+    {
+        "reportid":2, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"Monthly Average House Expenses",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"stackedBar",
+            "pre":"$",
+            "post":"k",
+            "width":450,
+            "height":450,
+            "color":0
+        },
+        "data":[
+            {
+                "lable":"2017-01-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":93.12,
+                    "Energy":0,
+                    "Phone":130,
+                    "Water":0,
+                    "Car Lease":0,
+                    "Grocery":391.61,
+                    "Gas":0,
+                    "Others":1636.91
+                }
+            },
+            {
+                "lable":"2017-02-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":60.15,
+                    "Phone":116.53,
+                    "Water":69.33,
+                    "Car Lease":0,
+                    "Grocery":420.00,
+                    "Gas":0,
+                    "Others":183.57
+                }
+            },
+            {
+                "lable":"2017-03-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":53.01,
+                    "Phone":130,
+                    "Water":65.00,
+                    "Car Lease":0,
+                    "Grocery":350.00,
+                    "Gas":0,
+                    "Others":0
+                }
+            },
+            {
+                "lable":"2017-04-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":82.19,
+                    "Phone":130,
+                    "Water":61.87,
+                    "Car Lease":0,
+                    "Grocery":390.61,
+                    "Gas":0,
+                    "Others":320.00
+                }
+            },
+            {
+                "lable":"2017-05-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":87.63,
+                    "Phone":130,
+                    "Water":56.05,
+                    "Car Lease":0,
+                    "Grocery":547.00,
+                    "Gas":0,
+                    "Others":167.00
+                }
+            },
+            {
+                "lable":"2017-06-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":0,
+                    "Phone":130,
+                    "Water":59.50,
+                    "Car Lease":0,
+                    "Grocery":240.00,
+                    "Gas":0,
+                    "Others":354.00
+                }
+            },
+            {
+                "lable":"2017-07-01 00:00:00.0",
+                "values":{
+                    "Rent":659.00,
+                    "Internet":44.99,
+                    "Energy":76.66,
+                    "Phone":130,
+                    "Water":59.85,
+                    "Car Lease":260,
+                    "Grocery":380.00,
+                    "Gas":40,
+                    "Others":340.00
+                }
+            },
+            {
+                "lable":"2017-08-01 00:00:00.0",
+                "values":{
+                    "Rent":1403.03,
+                    "Internet":100.69,
+                    "Energy":89.92,
+                    "Phone":130,
+                    "Water":58.24,
+                    "Car Lease":260.00,
+                    "Grocery":450.00,
+                    "Gas":150.00,
+                    "Others":0
+                }
+            },
+            {
+                "lable":"2017-09-01 00:00:00.0",
+                "values":{
+                    "Rent":908.00,
+                    "Internet":44.99,
+                    "Energy":94.33,
+                    "Phone":130,
+                    "Water":146.80,
+                    "Car Lease":250.28,
+                    "Grocery":478.98,
+                    "Gas":78.23,
+                    "Others":347.36
+                }
+            },
+            {
+                "lable":"2017-10-01 00:00:00.0",
+                "values":{
+                    "Rent":912.07,
+                    "Internet":44.99,
+                    "Energy":80.96,
+                    "Phone":130,
+                    "Water":46.80,
+                    "Car Lease":250.28,
+                    "Grocery":452.16,
+                    "Gas":136.88,
+                    "Others":446.99
+                }
+            },
+            {
+                "lable":"2017-11-01 00:00:00.0",
+                "values":{
+                    "Rent":912.07,
+                    "Internet":44.99,
+                    "Energy":73.06,
+                    "Phone":130,
+                    "Water":46.80,
+                    "Car Lease":250.28,
+                    "Grocery":295.34,
+                    "Gas":93.23,
+                    "Others":1730.20
+                }
+            },
+            {
+                "lable":"2017-12-01 00:00:00.0",
+                "values":{
+                    "Rent":912.07,
+                    "Internet":44.99,
+                    "Energy":84.99,
+                    "Phone":130,
+                    "Water":53.90,
+                    "Car Lease":250.28,
+                    "Grocery":338.14,
+                    "Gas":28.98,
+                    "Others":402.00
+                }
+            }
+        ]
+    },
+    {
+        "reportid":3, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"House Income vs National Average",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"barLine",
+            "pre":null,
+            "post":null,
+            "width":450,
+            "height":450,
+            "color":0
+        },
+        "data":[
+            {
+                "dataLine":[
+                    {
+                        "lable":"2017-01-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":4.16
+                        }
+                    },
+                    {
+                        "lable":"2017-02-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":1.05
+                        }
+                    },
+                    {
+                        "lable":"2017-03-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":2.58
+                        }
+                    },
+                    {
+                        "lable":"2017-04-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":2.47
+                        }
+                    },
+                    {
+                        "lable":"2017-05-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":4.36
+                        }
+                    },
+                    {
+                        "lable":"2017-06-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":4.18
+                        }
+                    },
+                    {
+                        "lable":"2017-07-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":3.65
+                        }
+                    },
+                    {
+                        "lable":"2017-08-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":1.25
+                        }
+                    },
+                    {
+                        "lable":"2017-09-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":1.30
+                        }
+                    },
+                    {
+                        "lable":"2017-10-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":5.12
+                        }
+                    },
+                    {
+                        "lable":"2017-11-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":4.42
+                        }
+                    },
+                    {
+                        "lable":"2017-12-01 00:00:00.0",
+                        "values":{
+                            "NATIONAL_AVERAGE":3.20
+                        }
+                    }
+                ],
+                "dataBar":[
+                    {
+                        "lable":"2017-01-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":0.00
+                        }
+                    },
+                    {
+                        "lable":"2017-02-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":0.00
+                        }
+                    },
+                    {
+                        "lable":"2017-03-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":0.00
+                        }
+                    },
+                    {
+                        "lable":"2017-04-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":0.00
+                        }
+                    },
+                    {
+                        "lable":"2017-05-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":0.43
+                        }
+                    },
+                    {
+                        "lable":"2017-06-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":3.17
+                        }
+                    },
+                    {
+                        "lable":"2017-07-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":4.25
+                        }
+                    },
+                    {
+                        "lable":"2017-08-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":3.98
+                        }
+                    },
+                    {
+                        "lable":"2017-09-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":3.65
+                        }
+                    },
+                    {
+                        "lable":"2017-10-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":4.09
+                        }
+                    },
+                    {
+                        "lable":"2017-11-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":3.74
+                        }
+                    },
+                    {
+                        "lable":"2017-12-01 00:00:00.0",
+                        "values":{
+                            "HOUSE_INCOME":3.21
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "reportid":4, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"Monthly Average Grocery Expenses",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"stackedArea",
+            "pre":"$",
+            "post":"k",
+            "width":450,
+            "height":450,
+            "color":0
+        },
+        "data":[
+            {
+                "lable":"2017-01-01 00:00:00.0",
+                "values":{
+                    "Tuna":5.92,
+                    "Turkey":7.74,
+                    "Pears":1.88,
+                    "Onions":4.68,
+                    "Tomatoes":3.03,
+                    "Potatoes":3.97,
+                    "Pasta Rigatoni":1.34,
+                    "Milk":2.65,
+                    "Mix Salad":1.96,
+                    "Mixed Peppers":3.48,
+                    "Berry Mix":10.44,
+                    "Cheese":3.98,
+                    "Chicken Breast":10.96,
+                    "White Napkins":2.97,
+                    "Yougurt":2.16,
+                    "Bread":2.98,
+                    "Eggs":1.52
+                }
+            },
+            {
+                "lable":"2017-02-01 00:00:00.0",
+                "values":{
+                    "Tuna":7.92,
+                    "Turkey":6.74,
+                    "Pears":3.88,
+                    "Onions":2.68,
+                    "Tomatoes":0.03,
+                    "Potatoes":1.97,
+                    "Pasta Rigatoni":4.34,
+                    "Milk":4.65,
+                    "Mix Salad":0.96,
+                    "Mixed Peppers":1.48,
+                    "Berry Mix":15.44,
+                    "Cheese":2.98,
+                    "Chicken Breast":8.96,
+                    "White Napkins":5.97,
+                    "Yougurt":4.16,
+                    "Bread":7.98,
+                    "Eggs":3.52
+                }
+            },
+            {
+                "lable":"2017-03-01 00:00:00.0",
+                "values":{
+                    "Tuna":3.92,
+                    "Turkey":2.74,
+                    "Pears":1.88,
+                    "Onions":0.68,
+                    "Tomatoes":4.03,
+                    "Potatoes":2.97,
+                    "Pasta Rigatoni":0.34,
+                    "Milk":2.65,
+                    "Mix Salad":4.96,
+                    "Mixed Peppers":3.48,
+                    "Berry Mix":7.44,
+                    "Cheese":5.98,
+                    "Chicken Breast":18.96,
+                    "White Napkins":0.97,
+                    "Yougurt":1.16,
+                    "Bread":3.98,
+                    "Eggs":5.52
+                }
+            },
+            {
+                "lable":"2017-04-01 00:00:00.0",
+                "values":{
+                    "Tuna":4.92,
+                    "Turkey":3.74,
+                    "Pears":4.88,
+                    "Onions":8.68,
+                    "Tomatoes":5.03,
+                    "Potatoes":3.97,
+                    "Pasta Rigatoni":4.34,
+                    "Milk":3.65,
+                    "Mix Salad":2.96,
+                    "Mixed Peppers":4.48,
+                    "Berry Mix":10.44,
+                    "Cheese":15.98,
+                    "Chicken Breast":12.96,
+                    "White Napkins":5.97,
+                    "Yougurt":3.16,
+                    "Bread":4.98,
+                    "Eggs":3.52
+                }
+            },
+            {
+                "lable":"2017-05-01 00:00:00.0",
+                "values":{
+                    "Tuna":6.92,
+                    "Turkey":4.74,
+                    "Pears":3.88,
+                    "Onions":5.68,
+                    "Tomatoes":2.03,
+                    "Potatoes":1.97,
+                    "Pasta Rigatoni":6.34,
+                    "Milk":5.65,
+                    "Mix Salad":3.96,
+                    "Mixed Peppers":7.48,
+                    "Berry Mix":8.44,
+                    "Cheese":11.98,
+                    "Chicken Breast":10.96,
+                    "White Napkins":4.97,
+                    "Yougurt":1.16,
+                    "Bread":1.98,
+                    "Eggs":0.52
+                }
+            },
+            {
+                "lable":"2017-06-01 00:00:00.0",
+                "values":{
+                    "Tuna":7.92,
+                    "Turkey":1.74,
+                    "Pears":2.88,
+                    "Onions":3.68,
+                    "Tomatoes":0.03,
+                    "Potatoes":0.97,
+                    "Pasta Rigatoni":4.34,
+                    "Milk":3.65,
+                    "Mix Salad":1.96,
+                    "Mixed Peppers":4.48,
+                    "Berry Mix":4.44,
+                    "Cheese":10.98,
+                    "Chicken Breast":12.96,
+                    "White Napkins":3.97,
+                    "Yougurt":2.16,
+                    "Bread":0.98,
+                    "Eggs":3.52
+                }
+            },
+            {
+                "lable":"2017-07-01 00:00:00.0",
+                "values":{
+                    "Tuna":4.92,
+                    "Turkey":4.74,
+                    "Pears":5.88,
+                    "Onions":6.68,
+                    "Tomatoes":2.03,
+                    "Potatoes":3.97,
+                    "Pasta Rigatoni":4.34,
+                    "Milk":5.65,
+                    "Mix Salad":7.96,
+                    "Mixed Peppers":6.48,
+                    "Berry Mix":8.44,
+                    "Cheese":7.98,
+                    "Chicken Breast":15.96,
+                    "White Napkins":4.97,
+                    "Yougurt":3.16,
+                    "Bread":4.98,
+                    "Eggs":2.52
+                }
+            },
+            {
+                "lable":"2017-08-01 00:00:00.0",
+                "values":{
+                    "Tuna":1.92,
+                    "Turkey":6.74,
+                    "Pears":8.88,
+                    "Onions":4.68,
+                    "Tomatoes":1.03,
+                    "Potatoes":5.97,
+                    "Pasta Rigatoni":5.34,
+                    "Milk":4.65,
+                    "Mix Salad":10.96,
+                    "Mixed Peppers":4.48,
+                    "Berry Mix":12.44,
+                    "Cheese":9.98,
+                    "Chicken Breast":10.96,
+                    "White Napkins":3.97,
+                    "Yougurt":4.16,
+                    "Bread":4.98,
+                    "Eggs":0.52
+                }
+            },
+            {
+                "lable":"2017-09-01 00:00:00.0",
+                "values":{
+                    "Tuna":7.92,
+                    "Turkey":4.74,
+                    "Pears":4.88,
+                    "Onions":6.68,
+                    "Tomatoes":3.03,
+                    "Potatoes":4.97,
+                    "Pasta Rigatoni":6.34,
+                    "Milk":1.65,
+                    "Mix Salad":8.96,
+                    "Mixed Peppers":6.48,
+                    "Berry Mix":7.44,
+                    "Cheese":11.98,
+                    "Chicken Breast":5.96,
+                    "White Napkins":0.97,
+                    "Yougurt":0.16,
+                    "Bread":5.98,
+                    "Eggs":3.52
+                }
+            },
+            {
+                "lable":"2017-10-01 00:00:00.0",
+                "values":{
+                    "Tuna":5.92,
+                    "Turkey":7.74,
+                    "Pears":1.88,
+                    "Onions":4.68,
+                    "Tomatoes":3.03,
+                    "Potatoes":3.97,
+                    "Pasta Rigatoni":1.34,
+                    "Milk":2.65,
+                    "Mix Salad":1.96,
+                    "Mixed Peppers":3.48,
+                    "Berry Mix":10.44,
+                    "Cheese":3.98,
+                    "Chicken Breast":10.96,
+                    "White Napkins":2.97,
+                    "Yougurt":2.16,
+                    "Bread":2.98,
+                    "Eggs":1.52
+                }
+            },
+            {
+                "lable":"2017-11-01 00:00:00.0",
+                "values":{
+                    "Tuna":5.92,
+                    "Turkey":1.74,
+                    "Pears":3.88,
+                    "Onions":9.68,
+                    "Tomatoes":4.03,
+                    "Potatoes":5.97,
+                    "Pasta Rigatoni":4.34,
+                    "Milk":5.65,
+                    "Mix Salad":6.96,
+                    "Mixed Peppers":4.48,
+                    "Berry Mix":3.44,
+                    "Cheese":10.98,
+                    "Chicken Breast":7.96,
+                    "White Napkins":3.97,
+                    "Yougurt":4.16,
+                    "Bread":1.98,
+                    "Eggs":8.52
+                }
+            },
+            {
+                "lable":"2017-12-01 00:00:00.0",
+                "values":{
+                    "Tuna":7.92,
+                    "Turkey":9.74,
+                    "Pears":5.88,
+                    "Onions":12.68,
+                    "Tomatoes":8.03,
+                    "Potatoes":6.97,
+                    "Pasta Rigatoni":9.34,
+                    "Milk":8.65,
+                    "Mix Salad":7.96,
+                    "Mixed Peppers":5.48,
+                    "Berry Mix":5.44,
+                    "Cheese":15.98,
+                    "Chicken Breast":9.96,
+                    "White Napkins":4.97,
+                    "Yougurt":5.16,
+                    "Bread":2.98,
+                    "Eggs":7.52
+                }
+            }
+        ]
+    },
+    {
+        "reportid":5, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"onthly Average Gas Expenses",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"bar",
+            "pre":"$",
+            "post":"k",
+            "width":450,
+            "height":450,
+            "color":0
+        },
+        "data":[
+            {
+                "lable":"2017-01-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-02-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-03-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-04-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-05-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-06-01 00:00:00.0",
+                "value":0.00
+            },
+            {
+                "lable":"2017-07-01 00:00:00.0",
+                "value":40.23
+            },
+            {
+                "lable":"2017-08-01 00:00:00.0",
+                "value":85.00
+            },
+            {
+                "lable":"2017-09-01 00:00:00.0",
+                "value":78.23
+            },
+            {
+                "lable":"2017-10-01 00:00:00.0",
+                "value":136.88
+            },
+            {
+                "lable":"2017-11-01 00:00:00.0",
+                "value":93.23
+            },
+            {
+                "lable":"2017-12-01 00:00:00.0",
+                "value":28.98
+            }
+        ]
+    },
+    {
+        "reportid":6, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"Credit Cards Debts",
+        "type":"chart",
+        "size":1,
+        "format":{
+            "type":"stackedNegativeBar",
+            "pre":"$",
+            "post":"k",
+            "width":450,
+            "height":450,
+            "percentOfTotal":true
+        },
+        "data":[
+            {
+                "lable":"Amex Express",
+                "values":{
+                    "Capacity (Total)":15000.00,
+                    "Credit (Available)": 8563.25,
+                    "Balance (Debt)": 6436.75
+                }
+            },
+            {
+                "lable":"Chase Freedom",
+                "values":{
+                    "Capacity (Total)":10000.00,
+                    "Credit (Available)": 9412.37,
+                    "Balance (Debt)": 587.63
+                }
+            },
+            {
+                "lable":"Discover",
+                "values":{
+                    "Capacity (Total)":7000.00,
+                    "Credit (Available)": 5987.10,
+                    "Balance (Debt)": 1012.90
+                }
+            },
+            {
+                "lable":"Capital One",
+                "values":{
+                    "Capacity (Total)":2500.00,
+                    "Credit (Available)": 2500.00,
+                    "Balance (Debt)": 0.00
+                }
+            },
+            {
+                "lable":"Citi",
+                "values":{
+                    "Capacity (Total)":25000.00,
+                    "Credit (Available)": 20147.58,
+                    "Balance (Debt)": 4852.42
+                }
+            },
+            {
+                "lable":"Amazon",
+                "values":{
+                    "Capacity (Total)":8500.00,
+                    "Credit (Available)": 2467.21,
+                    "Balance (Debt)": 6032.79
+                }
+            },
+            {
+                "lable":"Costco",
+                "values":{
+                    "Capacity (Total)":3000.00,
+                    "Credit (Available)": 2950.00,
+                    "Balance (Debt)": 50.00
+                }
+            },
+            {
+                "lable":"Bank of America",
+                "values":{
+                    "Capacity (Total)":17000.00,
+                    "Credit (Available)": 12587.89,
+                    "Balance (Debt)": 4412.11
+                }
+            }
+        ]
+    },
+    {
+        "reportid":7, 
+        "year":2017,
+        "idUser":"user1",
+        "name":"Tax Record",
+        "type":"grid",
+        "size":1,
+        "sum":false,
+        "sort":0,
+        "displayTable":false,
+        "data":[
+            {
+                "format":{
+                    "type":"sring",
+                    "pre":null,
+                    "post":null,
+                    "commas":false,
+                    "decimal":0
+                },
+                "property":"Sections",
+                "values":[
+                    "GROSS_PAY",
+                    "SS TAX",
+                    "MED TAX",
+                    "FED TAX",
+                    "NY TAX",
+                    "NY SUID/SDI",
+                    "NC TAX"
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"January",
+                "values":[
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"February",
+                "values":[
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"March",
+                "values":[
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"April",
+                "values":[
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"May",
+                "values":[
+                    438.00,
+                    27.15,
+                    6.35,
+                    1.40,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"June",
+                "values":[
+                    2298.20,
+                    204.38,
+                    47.49,
+                    260.76,
+                    105.29,
+                    2.60,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"July",
+                "values":[
+                    3382.12,
+                    338.88,
+                    79.25,
+                    522.45,
+                    210.71,
+                    2.60,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"August",
+                "values":[
+                    3981.13,
+                    432.05,
+                    101.05,
+                    719.86,
+                    258.92,
+                    2.60,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"September",
+                "values":[
+                    3650.10,
+                    341.90,
+                    79.97,
+                    570.16,
+                    235.89,
+                    2.60,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"Octuber",
+                "values":[
+                    4099.50,
+                    397.62,
+                    92.99,
+                    713.65,
+                    0,
+                    2.60,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"November",
+                "values":[
+                    3747.50,
+                    348.52,
+                    81.51,
+                    412.62,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "format":{
+                    "type":"nmbr",
+                    "pre":null,
+                    "post":null,
+                    "commas":true,
+                    "decimal":0
+                },
+                "property":"December",
+                "values":[
+                    3219.50,
+                    310.33,
+                    72.57,
+                    289.60,
+                    0,
+                    0,
+                    107.79
+                ]
+            }
+        ]
+    }
+]
