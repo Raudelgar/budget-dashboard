@@ -1,0 +1,143 @@
+header {
+    display: block;
+    position: relative;
+    top:0;
+    font-size: 0;
+    padding: 0;
+    background-color: $blue;
+    color: $purewhite;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 50px;
+    @extend .noselect;
+    @extend -transitionStandard;
+
+    logo {
+        font: bold;
+        font-size: 20px;
+        display: inline-block;
+        padding: 15px 10px;
+        margin: 0 0 0 10px;
+        width: 20px;
+    }
+
+    log:before {
+        pointer-events: none;
+    }
+
+    title {
+        display: inline-block;
+        padding: 15px 0;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        vertical-align: bottom;
+    }
+
+    userbar {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 0;
+        line-height: 20px;
+        float: right;
+
+        client {
+            display: inline-block;
+            position: relative;
+            left: 0;
+            padding: 15px;
+            font-size: 12px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            vertical-align: bottom;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: all 0.5s 0.5s;
+        }
+
+        user {
+            display: inline-flex;
+            position: relative;
+            left: 0;
+            padding: 15px;
+            vertical-align: bottom;
+            line-height: 0;
+            background-color: $midblue;
+            white-space: nowrap;
+            overflow: hidden;
+            @extend -transitionSlow;
+
+            usericon {
+                font: $mdi;
+                line-height: 20px;
+                padding: 0 5px 0 0;
+                vertical-align: bottom;
+                pointer-events: none;
+            }
+
+            usericon:before {
+                content: "\F004";
+            }
+
+            userid {
+                display: inline-block;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 5px;
+                vertical-align: bottom;
+                pointer-events: none;
+            }
+        }
+
+        buttons {
+            display: inline-block;
+            position: relative;
+            vertical-align: bottom;
+            line-height: 0;
+            background-color: $midblue;
+            z-index: 1;
+
+            save, settings {
+                display: inline-block;
+                position: relative;
+                font: $mdi;
+                line-height: 20px;
+                cursor: pointer;
+                padding: 15px 13px;
+                @extend -transitionVeryQuick;
+            }
+
+            save:hover, settings:hover {
+                background-color: rgba($purewhite, 0.05);
+            }
+
+            save[disable], settings[disable] {
+                opacity: 0.25;
+                pointer-events: none;
+            }
+
+            save:before {
+                content: "\F964";
+                pointer-events: none;
+            }
+
+            settings:before {
+                content: "\F35C";
+                pointer-events: none;
+            }
+        }
+    }
+
+    userbar[loading] {
+        client, user {
+            left: 100%;
+            padding: 15px 0;
+        }
+    }
+}
+
+header[loading] {
+    top: -50px;
+}

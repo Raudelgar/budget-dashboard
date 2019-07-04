@@ -1,0 +1,11 @@
+content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
