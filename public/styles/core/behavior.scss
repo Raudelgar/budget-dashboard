@@ -1,0 +1,63 @@
+.nodisplay {
+    display: none !important;
+}
+
+.disabled {
+    display: block;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.noevents {
+    pointer-events: none;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.allowselect {
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.nodrag {
+    -webkit-user-drag: none;
+    -ms-user-drag: none;
+    cursor: none;
+}
+
+.allowdrag {
+    -webkit-user-drag: all;
+    -ms-user-drag: all;
+}
+
+.boxshadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px -1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.drag {
+    cursor: -webkit-grabbing;
+}
+
+.rasterspeed {
+    transform: translate3d(0, 0, 0);
+}
+
+.readable {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+[contennteditable = 'true'] {
+    cursor: auto;
+}
+
+[contennteditable = 'true']:active, [contennteditable = 'true']:focus {
+    border: none;
+    outline: none;
+}
