@@ -1,0 +1,21 @@
+$standardBorderRadius: 2px;
+$animVeryQuick: 0.0675s;
+$animQuick: 0.125s;
+$animStandard: 0.25s;
+$animSlow: 0.5s;
+
+-transitionVeryQuick {
+    transition: all 0.0675s;
+}
+
+-transitionQuick {
+    transition: all 0.125s;
+}
+
+-transitionStandard {
+    transition: all 0.25s;
+}
+
+-transitionSlow {
+    transition: all 0.5s;
+}
