@@ -13,5 +13,125 @@ loader {
     opacity: 0;
     transition: opacity 0.5s;
 
-    
+    modal {
+        display: block;
+        position: relative;
+        width: 125px;
+        height: 125px;
+        animation: loaderRotate 7.5s infinite linear;
+
+        square {
+            display: inline-block;
+            width: 25%;
+            height: 24%;
+        }
+
+        square:nth-child(1){
+            animation-delay: 0s;
+        }
+        square:nth-child(2){
+            animation-delay: 0.1s;
+        }
+        square:nth-child(3){
+            animation-delay: 0.2s;
+        }
+        square:nth-child(4){
+            animation-delay: 0.3s;
+        }
+        square:nth-child(5){
+            animation-delay: 0.1s;
+        }
+        square:nth-child(6){
+            animation-delay: 0.2s;
+        }
+        square:nth-child(7){
+            animation-delay: 0.3s;
+        }
+        square:nth-child(8){
+            animation-delay: 0.4s;
+        }
+        square:nth-child(9){
+            animation-delay: 0.2s;
+        }
+        square:nth-child(10){
+            animation-delay: 0.3s;
+        }
+        square:nth-child(11){
+            animation-delay: 0.4s;
+        }
+        square:nth-child(12){
+            animation-delay: 0.5s;
+        }
+        square:nth-child(13){
+            animation-delay: 0.3s;
+        }
+        square:nth-child(14){
+            animation-delay: 0.4s;
+        }
+        square:nth-child(15){
+            animation-delay: 0.5s;
+        }
+        square:nth-child(16){
+            animation-delay: 0.6s;
+        }
+    }    
+}
+
+loader[loading]{
+    opacity: 1;
+
+    square{
+        display: inline-block;
+        width: 25%;
+        height: 25%;
+        animation: loaderSquareZoom 2.5s infinite ease-in-out, loaderSquareColorshift 5s infinite ease-in-out;
+    }
+}
+
+@keyframes loaderRotate{
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.25) rotate(180deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+@keyframes loaderSquareZoom{
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(0.01) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1) rotate(-90deg);
+    }
+    75% {
+        transform: scale(0.01) rotate(-135deg);
+    }
+    100% {
+        transform: scale(1) rotate(-180deg);
+    }
+}
+
+@keyframes loaderSquareColorshift{
+    0%,19% {
+        background-color: #A145B3;
+    }
+    20%,39% {
+        background-color: #E4002B;
+    }
+    40%,59% {
+        background-color: #E57200;
+    }
+    60%,79% {
+        background-color: #00C7B1;
+    }
+    80%,100% {
+        background-color: #00A82D;
+    }
 }
