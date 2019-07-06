@@ -1,0 +1,27 @@
+gg tbl sum {
+  display: table-footer-group;
+
+  font-family: "Roboto Mono";
+
+  font-size: 11px;
+
+  font-weight: 500;
+}
+
+gg tbl sum row {
+  display: table-row;
+
+  top: 0;
+}
+
+gg tbl sum row cell {
+  top: 0;
+
+  font-weight: bold;
+
+  line-height: 14px;
+
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.025);
+}

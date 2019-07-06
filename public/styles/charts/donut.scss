@@ -1,0 +1,42 @@
+chart.donut {
+  svg {
+    text {
+      alignment-baseline: middle;
+    }
+
+    g.pathstack {
+      path {
+        transition: fill-opacity $animQuick, transform $animQuick;
+      }
+
+      path.arc.over {
+        fill-opacity: 0.5;
+      }
+
+      path.arc.expanded {
+        transform: scale(1.05);
+      }
+    }
+
+    g.percents {
+      text {
+        font-size: 11px;
+
+        font-weight: bold;
+
+        opacity: 0.67; //needs to be opacity and not fill-opacity because of a different setting which animates the fill-opacity
+      }
+    }
+
+    g.percents,
+    g.values {
+      text {
+        transition: all 0.5s;
+      }
+
+      text[hidden="true"] {
+        fill-opacity: 0;
+      }
+    }
+  }
+}

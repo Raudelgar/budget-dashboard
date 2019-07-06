@@ -1,0 +1,11 @@
+gg tbl columngroup {
+  display: table-column-group;
+}
+
+gg tbl columngroup c {
+  display: table-column;
+}
+
+gg tbl[highlightcolumn] columngroup c[hover] {
+  background-color: rgba(0, 0, 0, 0.025);
+}

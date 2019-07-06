@@ -1,0 +1,124 @@
+chart.stackedNegativeBar {
+  svg {
+    g.container {
+      text {
+        alignment-baseline: middle;
+      }
+
+      g.stack {
+        g.bars {
+          pointer-events: none;
+
+          rect {
+            transition: opacity $animQuick;
+          }
+        }
+      }
+
+      g.grid {
+        pointer-events: none;
+
+        g.tick {
+          line {
+            stroke: rgba($black, 0.25);
+          }
+
+          text {
+            text-anchor: end;
+          }
+        }
+
+        path.domain {
+          display: none;
+        }
+      }
+
+      g.xaxis {
+        pointer-events: none;
+
+        g.tick {
+          text {
+            font-size: 11px;
+          }
+        }
+      }
+
+      g.yaxis {
+        pointer-events: none;
+
+        text {
+          transition: opacity, fill $animQuick;
+        }
+
+        text.toggled {
+          fill: $midblue;
+        }
+
+        path.domain {
+          display: none;
+        }
+
+        g.tick {
+          text {
+            text-anchor: start;
+
+            pointer-events: none;
+          }
+
+          line {
+            opacity: 0;
+          }
+        }
+      }
+
+      g.selectionbars {
+        rect.selectbar {
+          fill-opacity: 0;
+
+          transition: all $animQuick;
+        }
+      }
+
+      g.legend {
+        g.item {
+          rect.background {
+            fill-opacity: 0;
+
+            cursor: pointer;
+          }
+        }
+
+        g.item[inactive="true"] {
+          opacity: 0.25;
+        }
+      }
+    }
+
+    g.container.hover,
+    g.container.toggled {
+      g.stack {
+        g.bars {
+          rect:not(.active):not(.toggled) {
+            opacity: 0.25;
+          }
+        }
+      }
+
+      g.yaxis {
+        text:not(.active):not(.toggled) {
+          opacity: 0.25;
+        }
+      }
+
+      g.selectionbars {
+        rect.selectbar.active {
+          background-color: $midblue;
+
+          fill-opacity: 0.05;
+
+          transition: fill $animQuick;
+        }
+      }
+    }
+  }
+}

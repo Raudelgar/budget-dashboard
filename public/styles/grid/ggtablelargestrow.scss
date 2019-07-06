@@ -1,0 +1,25 @@
+gg tbl largest {
+  display: table-row-group;
+
+  font-family: "Roboto Mono";
+
+  font-size: 11px;
+}
+
+gg tbl largest row {
+  display: table-row;
+}
+
+gg tbl largest row cell {
+  color: transparent;
+
+  line-height: 0;
+
+  height: 1px;
+
+  padding: 0 10px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}

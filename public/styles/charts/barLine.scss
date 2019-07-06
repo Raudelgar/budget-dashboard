@@ -1,0 +1,33 @@
+chart.barLine {
+  svg {
+    g.stack {
+      path.line {
+        fill: none;
+
+        stroke-width: 3;
+
+        stroke-linecap: round;
+
+        stroke-linejoin: round;
+
+        pointer-events: none;
+
+        transition: stroke-width $animQuick;
+      }
+
+      path.line[disabled] {
+        stroke-width: 0;
+      }
+    }
+
+    g.axis {
+      opacity: 1;
+
+      transition: opacity $animQuick;
+    }
+
+    g.axis[disabled] {
+      opacity: 0;
+    }
+  }
+}

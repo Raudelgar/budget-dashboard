@@ -1,0 +1,81 @@
+gg tbl {
+  display: table;
+
+  position: absolute;
+
+  /* border-collapse: collapse; */
+
+  width: 100%;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 14px;
+
+  user-select: none;
+
+  /* border-spacing: 1px 0; */
+
+  border-spacing: 0;
+
+  border: 0;
+}
+
+gg tbl row cell {
+  display: table-cell;
+
+  position: relative;
+
+  padding: 10px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  /* overflow: hidden; */
+
+  /* text-overflow: ellipsis; */
+
+  /* max-width: 125px; */
+
+  cursor: default;
+
+  transition: all $animQuick;
+}
+
+gg tbl row cell[type="string"] {
+  text-align: left;
+}
+
+gg tbl row cell[type="nmbr"] {
+  text-align: right;
+}
+
+gg tbl row cell[toggled] {
+  background-color: rgba($midteal, 0.15);
+}
+
+gg tbl row cell[contenteditable]:focus {
+  text-align: left;
+
+  outline: 0;
+
+  background-color: rgba($midteal, 0.15);
+
+  box-shadow: inset 0 0 0 2px $midteal;
+}
+
+gg tbl row cell::first-letter {
+  text-transform: uppercase;
+}
+
+gg tbl row cell::selection {
+  color: $purewhite;
+
+  background-color: $midteal;
+}

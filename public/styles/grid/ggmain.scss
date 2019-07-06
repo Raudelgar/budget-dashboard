@@ -1,0 +1,43 @@
+gg {
+  font-family: "Roboto";
+
+  font-size: 14px;
+
+  line-height: 1em;
+
+  margin: 0;
+
+  padding: 0;
+
+  color: $black;
+
+  background-color: $purewhite;
+
+  text-align: center;
+
+  display: block;
+
+  position: relative;
+
+  /* height: 476px; */
+
+  overflow-y: auto;
+
+  scroll-behavior: auto; /* this needs to be here */
+}
+
+gg szr {
+  display: block;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  pointer-events: none;
+
+  z-index: -1;
+}

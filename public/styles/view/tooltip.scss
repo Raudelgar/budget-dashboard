@@ -1,0 +1,116 @@
+tooltip {
+  display: block;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  // margin is set via js to position the tooltip properly when running into the edge of the screen
+
+  font-family: $robotomono;
+
+  font-size: 12px;
+
+  line-height: 16px;
+
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  padding: 6px 8px;
+
+  color: $black;
+
+  background-color: $brightwhite;
+
+  border-radius: $standardBorderRadius;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  z-index: 1;
+
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.25), 0 0 1px 0 rgba(0, 0, 0, 0.125);
+
+  transition: margin $animQuick;
+
+  title {
+    display: block;
+
+    position: relative;
+
+    left: -8px;
+
+    bottom: 6px;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 6px 8px;
+
+    background-color: $offwhite;
+  }
+
+  items {
+    display: block;
+
+    item,
+    sum {
+      display: block;
+
+      text-align: right;
+
+      property {
+        display: inline-block;
+
+        margin-right: 5px;
+
+        white-space: nowrap;
+      }
+
+      value {
+        display: inline-block;
+
+        white-space: nowrap;
+      }
+    }
+
+    sum {
+      display: block;
+
+      position: relative;
+
+      left: -8px;
+
+      top: 6px;
+
+      width: 100%;
+
+      margin: 0;
+
+      padding: 6px 8px;
+
+      border-top: 1px solid $black;
+    }
+  }
+}
+
+tooltip[active] {
+  opacity: 1;
+}
+
+tooltip.toggled {
+  color: $white;
+
+  background-color: $midblue;
+
+  title {
+    background-color: rgba($black, 0.25);
+  }
+}

@@ -1,0 +1,1598 @@
+popover{
+    modal{
+        display: flex;
+        flex-direction: column;
+        // background-color: $brightwhite;
+        background-color: $darkwhite;
+        box-shadow: 1px 1px 3px 1px rgba($black, 0.5);
+        overflow: hidden;
+        border-radius: $standardBorderRadius;
+        user-select: none;
+        width: calc(100vw - 10vh);
+        min-width: 775px;
+        max-width: 1000px;
+
+        modalheader{
+            display: block;
+            position: relative;
+            width: 100%;
+
+                        line-height: 20px;
+
+                        padding: 15px 20px;
+
+            background-color: $midblue;
+
+                        color: $brightwhite;
+
+                        box-sizing: border-box;
+
+ 
+
+            title {
+
+                display: block;
+
+                                        font-size: 16px;
+
+                                                                line-height: 20px;
+
+                                        font-weight: 500;
+
+                                        letter-spacing: 5px;
+
+                                        text-transform: uppercase;
+
+                align-self: center;
+
+                                                                pointer-events: none;
+
+            }
+
+ 
+
+            /* The Close Button */
+
+            close{
+
+                                                                display: flex;
+
+                                                                position: absolute;
+
+                                                                top: 0;
+
+                                                                right: 0;
+
+                                                                height: 50px;
+
+                                                                width: 50px;
+
+                font-size: 30px;
+
+                font-weight: bold;
+
+                                                                color: $purewhite;
+
+                                                                justify-content: center;
+
+                                                                align-items: center;
+
+                                                                @extend -transitionVeryQuick;
+
+            }
+
+ 
+
+                                                close:before{
+
+                                                                display: block;
+
+                                                                font: $mdi;
+
+                                                                line-height: 20px;
+
+                                                                content: "\F156";
+
+                                                                pointer-events: none;
+
+                                                }
+
+ 
+
+            close:hover,
+
+            close:focus {
+
+                text-decoration: none;
+
+                cursor: pointer;
+
+                                                                background-color: rgba($purewhite, 0.05);
+
+            }
+
+        }
+
+ 
+
+        modalbox {
+
+                                                display: block;
+
+                                                box-sizing: border-box;
+
+                                                // max-height: calc(100vh - 50px - 70px - 40px);
+
+                                                // margin: 10px;
+
+                                                // border-top-left-radius: $standardBorderRadius;
+
+                                                // border-top-right-radius: $standardBorderRadius;
+
+                                                // background-color: $purewhite;
+
+ 
+
+                                                tabholder{
+
+                                                                display: grid;
+
+                                                                grid-template-columns: 1fr;
+
+                                                                grid-template-rows: auto;
+
+                                                                grid-template-areas: "tabnav" "tab";
+
+ 
+
+                                                                tabnav{
+
+                                                                                display: block;
+
+                                                                                grid-area: tabnav;
+
+                                                                                background-color: $purewhite;
+
+ 
+
+                                                                                tabtitle{
+
+                                                                                                display: inline-block;
+
+                                                                                                padding: 10px 20px;
+
+                                                                                                font-size: 14px;
+
+                                                                                                line-height: 1em;
+
+                                    font-weight: 500;
+
+                                                                                                background-color: $purewhite;
+
+                                                                                                cursor: pointer;
+
+                                                                                                @extend -transitionVeryQuick;
+
+                                                                                }
+
+ 
+
+                                                                                tabtitle:not([active]):hover{
+
+                                                                                                background-color: $white;
+
+                                                                                }
+
+ 
+
+                                                                                tabtitle[active]{
+
+                                                                                                background-color: $white;
+
+                    }
+
+ 
+
+                    tabtitle[disable]{
+
+                                                                                                display: none;
+
+                    }
+
+                   
+
+                                                                }
+
+ 
+
+                                                                tabnav[active="1"] ~ :nth-child(2), tabnav[active="2"] ~ :nth-child(3), tabnav[active="3"] ~ :nth-child(4){
+
+                                                                                visibility: visible;
+
+                                                                }
+
+ 
+
+                                                                tab{
+
+                                                                                display: flex;
+
+                                                                                visibility: hidden;
+
+                                                                                padding: 10px;
+
+                                                                                grid-area: tab;
+
+                                                                                // min-width: 350px;
+
+ 
+
+                                                                                group{
+
+                                                                                                display: block;
+
+                                                                                                width: 100%;
+
+                                                                                                border-radius: $standardBorderRadius;
+
+                                                                                                overflow: hidden;
+
+ 
+
+                                                                                                title {
+
+                                                                                                                display: block;
+
+                                                                                                                padding: 10px;
+
+                                                                                                                font-size: 14px;
+
+                                                                                                                line-height: 1em;
+
+                                                                                                                font-weight: 500;
+
+                                                                                                                background-color: $brightwhite;
+
+                                                                                                                position: relative;
+
+                                                                                                                box-sizing: border-box;
+
+                                                                                                }
+
+ 
+
+                                                                                                items{
+
+                                                                                                                display: block;
+
+                                                                                                                height: calc(100% - 34px);
+
+                                                                                                                font-size: 14px;
+
+                                                                                                                line-height: 20px;
+
+                                                                                                                background-color: $purewhite;
+
+                                                                                                                box-sizing: border-box;
+
+ 
+
+                                                                                                                item{
+
+                                                                                                                                display: block;
+
+                                                                                                                                position: relative;
+
+                                                                                                                                box-sizing: border-box;
+
+ 
+
+                                                                                                                                background-color: rgba(0, 0, 0, 0);
+
+                                                                                                                                white-space: nowrap;
+
+                                                                                                                                transition: background-color $animVeryQuick;
+
+ 
+
+                                                                                                                                label{
+
+                                                                                                                                                display: block;
+
+                                                                                                                                                font-size: 13px;
+
+                                                                                                                                                line-height: 20px;
+
+                                                                                                                                                padding: 7px 10px;
+
+                                                                                                                                                cursor: pointer;
+
+ 
+
+                                                                                                                                                input{
+
+                                                                                                                                                                display: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch{
+
+                                                                                                                                                                display: inline-flex;
+
+                                                                                                                                                                align-items: center;
+
+                                                                                                                                                                justify-content: center;
+
+                                                                                                                                                                position: relative;
+
+                                                                                                                                                                width: 32px;
+
+                                                                                                                                                                height: 20px;
+
+                                                                                                                                                                margin: 0 10px 0 0;
+
+                                                                                                                                                                background-color: $darkwhite;
+
+                                                                                                                                                                border-radius: 10px;
+
+                                        transition: background-color $animStandard;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch:before{
+
+                                                                                                                                                                display: block;
+
+                                                                                                                                                                position: absolute;
+
+                                                                                                                                                                left: 2px;
+
+                                                                                                                                                                height: 16px;
+
+                                                                                                                                                                width: 16px;
+
+                                                                                                                                                                background-color: $purewhite;
+
+                                                                                                                                                                border-radius: 50%;
+
+                                                                                                                                                                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+
+                                                                                                                                                                content: "";
+
+                                                                                                                                                                transition: background-color $animStandard, left $animStandard;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                t{
+
+                                                                                                                                                                white-space: pre;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                t, onoff{
+
+                                                                                                                                                                display: inline-block;
+
+                                                                                                                                                                pointer-events: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                onoff{
+
+                                                                                                                                                                display: inline-block;
+
+                                                                                                                                                                margin: 0 10px 0 0;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch, t{
+
+                                                                                                                                                                vertical-align: top;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                input ~ onoff:before{
+
+                                                                                                                                                                content: 'Off';
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                input:checked ~ onoff:before{
+
+                                                                                                                                                                content: 'On';
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                input:checked ~ switch{
+
+                                                                                                                                                                background-color: $midblue;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                input:checked ~ switch:before{
+
+                                                                                                                                                                left: calc(100% - 16px - 2px);
+
+                                                                                                                                                                background-color: $purewhite;
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+                                                                                                                }
+
+ 
+
+                                                                                                                item:hover{
+
+                                                                                                                                background-color: rgba($black, 0.025);
+
+                                                                                                                                text-decoration: none;
+
+                                                                                                                                cursor: pointer;
+
+                                                                                                                }
+
+                                                                                                }
+
+                    }
+
+                    group.admin-container{
+
+                        display: grid;
+
+                        grid-template-columns: 40% 60%;
+
+                        grid-template-rows: 10%;
+
+                        grid-column-gap: 10px;
+
+ 
+
+                        searchbox {
+
+                                                                                                                display: block;
+
+                                                                                                                position: relative;
+
+                                                                                                                // margin: 0 15px;
+
+                                                                                                                padding: 0;
+
+                                                                                                                box-sizing: border-box;
+
+                                                                                                                border-top-left-radius: $standardBorderRadius;
+
+                                                                                                                border-top-right-radius: $standardBorderRadius;
+
+                                                                                                                background-color: $lightgrey;
+
+                                                                                                                overflow: hidden;
+
+ 
+
+                                                                                                                input {
+
+                                                                                                                                width: 100%;
+
+                                                                                                                                font-family: $robotomono;
+
+                                                                                                                                font-size: 13px;
+
+                                                                                                                                font-weight: 500;
+
+                                                                                                                                line-height: 1em;
+
+                                                                                                                                padding: 8px 10px 8px 40px;
+
+                                                                                                                                border: 0;
+
+                                                                                                                                outline: none;
+
+                                                                                                                                background-color: transparent;
+
+                                                                                                                                // box-shadow: inset 0 0 0 1px rgba($black, 0.1);
+
+                                                                                                                                box-sizing: border-box;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                input::placeholder{
+
+                                                                                                                                color: rgba($black, 0.33);
+
+                                                                                                                }
+
+ 
+
+                                                                                                                search{
+
+                                                                                                                                display: inline-flex;
+
+                                                                                                                                position: absolute;
+
+                                                                                                                                top: 0;
+
+                                                                                                                                left: 0;
+
+                                                                                                                                height: 34px;
+
+                                                                                                                                width: 20px;
+
+                                                                                                                                padding: 0 10px;
+
+                                                                                                                                font: $mdi;
+
+                                                                                                                                line-height: 14px;
+
+                                                                                                                                align-items: center;
+
+                                                                                                                                justify-content: center;
+
+                                                                                                                                pointer-events: none;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                search:before{
+
+                                                                                                                                content: "\F016";
+
+                                                                                                                }
+
+                                                                                                }
+
+ 
+
+                        // title.client, title.report{
+
+                        //     grid-row-start: row1-start;
+
+                        //     grid-row-end: row1-end;
+
+                        // }
+
+ 
+
+                        // items.client,items.report{
+
+                        //     grid-row-start: row2-start;
+
+                        //     grid-row-end: row2-end;
+
+                        // }
+
+ 
+
+                        // title.client{
+
+                        //     grid-column-start: 1;
+
+                        //     grid-column-end: 2;
+
+                        // }
+
+ 
+
+                        // items.client{
+
+                        //     grid-column-start: 1;
+
+                        //     grid-column-end: 2;
+
+                        // }
+
+ 
+
+                        // title.report{
+
+                        //     grid-column-start: 2;
+
+                        //     grid-column-end: 3;
+
+                        // }
+
+                        // items.report{
+
+                        //     grid-column-start: 2;
+
+                        //     grid-column-end: 3;
+
+                        // }
+
+                    }
+
+ 
+
+                                                                                masterclientids{
+
+                                                                                                display: block;
+
+                                                                                                flex-grow: 1;
+
+                                                                                                margin: 0 10px 0 0;
+
+                                                                                                // background-color: $purewhite;
+
+                                                                                                border-radius: $standardBorderRadius;
+
+                                                                                                overflow: hidden;
+
+ 
+
+                                                                                                title {
+
+                                                                                                                display: block;
+
+                                                                                                                padding: 10px;
+
+                                                                                                                font-size: 14px;
+
+                                                                                                                line-height: 1em;
+
+                                                                                                                font-weight: 500;
+
+                                                                                                                // padding: 15px 0 0 0;
+
+                                                                                                                // margin: 0 15px 0 15px;
+
+                                                                                                                // margin: 15px 15px 0 15px;
+
+                                                                                                                // background-color: rgba($black, 0.1);
+
+                                                                                                                background-color: $brightwhite;
+
+                                                                                                                position: relative;
+
+                                                                                                                box-sizing: border-box;
+
+                                                                                                                // border-bottom: 1px solid $black;
+
+                                                                                                }
+
+ 
+
+                                                                                                activemasterclient{
+
+                                                                                                                display: block;
+
+                                                                                                                font-size: 13px;
+
+                                                                                                                line-height: 14px;
+
+                                                                                                                // margin: 0 15px;
+
+                                                                                                                margin: 0 0 10px 0;
+
+                                                                                                                padding: 10px;
+
+                                                                                                                white-space: nowrap;
+
+                                                                                                                letter-spacing: normal;
+
+                                                                                                                // background-color: rgba($black, 0.1);
+
+                                                                                                                background-color: $purewhite;
+
+                                                                                                                border-bottom-left-radius: $standardBorderRadius;
+
+                                                                                                                border-bottom-right-radius: $standardBorderRadius;
+
+ 
+
+                                                                                                                property, value{
+
+                                                                                                                                pointer-events: none;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                property{
+
+                                                                                                                                display: inline-block;
+
+                                                                                                                                margin-right: 5px;
+
+                                                                                                                                // text-transform: uppercase;
+
+ 
+
+                                                                                                                }
+
+ 
+
+                                                                                                                value{
+
+                                                                                                                                display: inline-block;
+
+                                                                                                                                // text-transform: lowercase;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                value::first-letter{
+
+                                                                                                                                // text-transform: uppercase;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                value[update]{
+
+                                                                                                                                color: $midblue;
+
+                                                                                                                }
+
+                                                                                                }
+
+ 
+
+                                                                                                searchbox {
+
+                                                                                                                display: block;
+
+                                                                                                                position: relative;
+
+                                                                                                                // margin: 0 15px;
+
+                                                                                                                padding: 0;
+
+                                                                                                                box-sizing: border-box;
+
+                                                                                                                border-top-left-radius: $standardBorderRadius;
+
+                                                                                                                border-top-right-radius: $standardBorderRadius;
+
+                                                                                                                background-color: $brightwhite;
+
+                                                                                                                overflow: hidden;
+
+ 
+
+                                                                                                                input {
+
+                                                                                                                                width: 100%;
+
+                                                                                                                                font-family: $robotomono;
+
+                                                                                                                                font-size: 13px;
+
+                                                                                                                                font-weight: 500;
+
+                                                                                                                                line-height: 1em;
+
+                                                                                                                                padding: 8px 10px 8px 40px;
+
+                                                                                                                                border: 0;
+
+                                                                                                                                outline: none;
+
+                                                                                                                                background-color: transparent;
+
+                                                                                                                                // box-shadow: inset 0 0 0 1px rgba($black, 0.1);
+
+                                                                                                                                box-sizing: border-box;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                input::placeholder{
+
+                                                                                                                                color: rgba($black, 0.33);
+
+                                                                                                                }
+
+ 
+
+                                                                                                                search{
+
+                                                                                                                                display: inline-flex;
+
+                                                                                                                                position: absolute;
+
+                                                                                                                                top: 0;
+
+                                                                                                                                left: 0;
+
+                                                                                                                                height: 34px;
+
+                                                                                                                                width: 20px;
+
+                                                                                                                                padding: 0 10px;
+
+                                                                                                                                font: $mdi;
+
+                                                                                                                                line-height: 14px;
+
+                                                                                                                                align-items: center;
+
+                                                                                                                                justify-content: center;
+
+                                                                                                                                pointer-events: none;
+
+                                                                                                                }
+
+ 
+
+                                                                                                                search:before{
+
+                                                                                                                                content: "\F016";
+
+                                                                                                                }
+
+                                                                                                }
+
+ 
+
+                                                                                                masterclients {
+
+                                                                                                                display: block;
+
+                                                                                                                // margin: 0 15px;
+
+                                                                                                                height: calc(100% - 112px);
+
+                                                                                                                max-height: calc(100vh - 312px);
+
+ 
+
+                                                                                                                // background-color: rgba($black, 0.1);
+
+                                                                                                                background-color: $purewhite;
+
+                                                                                                                overflow-y: auto;
+
+ 
+
+                                                                                                                masterclient {
+
+                                                                                                                                display: block;
+
+                                                                                                                                position: relative;
+
+                                                                                                                                box-sizing: border-box;
+
+                                                                                                                                font-size: 13px;
+
+                                                                                                                                line-height: 20px;
+
+                                                                                                                                padding: 7px 10px;
+
+                                                                                                                                background-color: rgba(0, 0, 0, 0);
+
+                                                                                                                                white-space: nowrap;
+
+                                                                                                                                transition: background-color $animVeryQuick;
+
+                                                                                                                                // border: 1px solid $offwhite;
+
+                                                                                                                                // background-color: $brightwhite;
+
+                                                                                                                                // letter-spacing: 3px;
+
+                                                                                                                                // text-transform: uppercase;
+
+ 
+
+                                                                                                                                lock{
+
+                                                                                                                                                display: inline-flex;
+
+                                                                                                                                                position: relative;
+
+                                                                                                                                                width: 20px;
+
+                                                                                                                                                height: 18px;
+
+                                                                                                                                                font: $mdi;
+
+                                                                                                                                                font-size: 14px;
+
+                                                                                                                                                line-height: 20px;
+
+                                                                                                                                                margin: 0 10px 0 0;
+
+                                                                                                                                                align-items: center;
+
+                                                                                                                                                justify-content: center;
+
+                                                                                                                                                vertical-align: top;
+
+                                                                                                                                                text-align: center;
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                lock[changed]{
+
+                                                                                                                                                color: $midblue;
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                lock[locked]:before{
+
+                                                                                                                                                display: block;
+
+                                                                                                                                                position: absolute;
+
+                                                                                                                                                width: 20px;
+
+                                                                                                                                                height: 20px;
+
+                                                                                                                                                background-color: rgba($black, 0.125);
+
+                                                                                                                                                border-radius: 50%;
+
+                                                                                                                                                content: "\F33E";
+
+                                                                                                                                                pointer-events: none;
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                lock[unlocked]:before{
+
+                                                                                                                                                content: "\F33F";
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                t{
+
+                                                                                                                                                display: inline-block;
+
+                                                                                                                                                vertical-align: top;
+
+                                                                                                                                                pointer-events: none;
+
+                                                                                                                                }
+
+                                                                                                                }
+
+ 
+
+                                                                                                                masterclient:hover{
+
+                                                                                                                                background-color: rgba($black, 0.025);
+
+                                                                                                                                text-decoration: none;
+
+                                                                                                                                cursor: pointer;
+
+                                                                                                                }
+
+                                                                                                }
+
+                                                                                }
+
+ 
+
+                                                                                reports{
+
+                                                                                                display: block;
+
+                                                                                                flex-grow: 1;
+
+                                                                                                max-height: calc(100vh - 200px);
+
+                                                                                                background-color: $purewhite;
+
+                                                                                                border-radius: $standardBorderRadius;
+
+                                                                                                overflow: hidden;
+
+ 
+
+                                                                                                title {
+
+                                                                                                                display: block;
+
+                                                                                                                padding: 10px;
+
+                                                                                                                font-size: 14px;
+
+                                                                                                                line-height: 1em;
+
+                                                                                                                font-weight: 500;
+
+                                                                                                                // padding: 15px 0 0 0;
+
+                                                                                                                // margin: 0 15px 0 15px;
+
+                                                                                                                // margin: 15px 15px 0 15px;
+
+                                                                                                                // background-color: rgba($black, 0.1);
+
+                                                                                                                background-color: $brightwhite;
+
+                                                                                                                position: relative;
+
+                                                                                                                box-sizing: border-box;
+
+                                                                                                }
+
+ 
+
+                                                                                                reportlist{
+
+                                                                                                                display: block;
+
+                                                                                                                height: calc(100% - 34px);
+
+                                                                                                                overflow-y: auto;
+
+ 
+
+                                                                                                                report{
+
+                                                                                                                                display: block;
+
+                                                                                                                                transition: background-color $animVeryQuick;
+
+ 
+
+                                                                                                                                label{
+
+                                                                                                                                                display: block;
+
+                                                                                                                                                font-size: 13px;
+
+                                                                                                                                                line-height: 20px;
+
+                                                                                                                                                padding: 7px 10px;
+
+                                                                                                                                                white-space: nowrap;
+
+                                                                                                                                                cursor: pointer;
+
+ 
+
+                                                                                                                                                input{
+
+                                        display: none;
+
+                                        pointer-events: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch{
+
+                                                                                                                                                                display: inline-flex;
+
+                                                                                                                                                                align-items: center;
+
+                                                                                                                                                                justify-content: center;
+
+                                                                                                                                                                position: relative;
+
+                                                                                                                                                                width: 32px;
+
+                                                                                                                                                                height: 20px;
+
+                                                                                                                                                                margin: 0 10px 0 0;
+
+                                        background-color: $darkwhite;
+
+                                                                                                                                                                border-radius: 10px;
+
+                                        transition: background-color $animStandard;
+
+                                        pointer-events: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch:before{
+
+                                                                                                                                                                display: block;
+
+                                                                                                                                                                position: absolute;
+
+                                                                                                                                                                left: 2px;
+
+                                                                                                                                                                height: 16px;
+
+                                                                                                                                                                width: 16px;
+
+                                        background-color: $purewhite;
+
+                                                                                                                                                                border-radius: 50%;
+
+                                                                                                                                                                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+
+                                                                                                                                                                content: "";
+
+                                                                                                                                                                transition: background-color $animStandard, left $animStandard;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                t{
+
+                                        display: inline-block;
+
+                                        white-space: pre;
+
+                                        pointer-events: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch, t{
+
+                                                                                                                                                                vertical-align: top;
+
+                                                                                                                                                }
+
+                                    
+
+                                    switch[checked]{
+
+                                                                                                                                                                background-color: $midblue;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                switch[checked]:before{
+
+                                                                                                                                                                left: calc(100% - 16px - 2px);
+
+                                                                                                                                                                background-color: $purewhite;
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                label[update]{
+
+                                                                                                                                                color: $midblue;
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                //Size Button
+
+                                                                                                                                button.dropbtn {
+
+                                                                                                                                                // display: inline-flex;
+
+ 
+
+                                                                                                                                                display: none;
+
+ 
+
+                                                                                                                                                align-items: center;
+
+                                                                                                                                                box-sizing: border-box;
+
+                                                                                                                                                margin-left: auto;
+
+                                                                                                                                                font-size: 14px;
+
+                                                                                                                                                line-height: 20px;
+
+                                                                                                                                                background-color: $white;
+
+                                                                                                                                                border: 0;
+
+                                                                                                                                                outline: 0;
+
+ 
+
+                                                                                                                                                padding: 5px 10px;
+
+                                                                                                                                                cursor: pointer;
+
+ 
+
+                                                                                                                                                i.down, i.up{
+
+                                                                                                                                                                display: flex;
+
+                                                                                                                                                                position: relative;
+
+                                                                                                                                                                width: 13px;
+
+                                                                                                                                                                height: 10px;
+
+                                                                                                                                                                margin-left: 5px;
+
+                                                                                                                                                                font: $mdi;
+
+                                                                                                                                                                line-height: 10px;
+
+                                                                                                                                                                color: $midblue;
+
+                                                                                                                                                                pointer-events: none;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                i.down:before, i.up:before{
+
+                                                                                                                                                                display: block;
+
+                                                                                                                                                                position: absolute;
+
+                                                                                                                                                                left: -50%;
+
+                                                                                                                                                                justify-content: center;
+
+                                                                                                                                                                align-items: center;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                i.down:before{
+
+                                                                                                                                                                content: "\F35D";
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                i.up:before {
+
+                                                                                                                                                                content: "\F360";
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                button.dropbtn:hover {
+
+                                                                                                                                                background-color: $midblue;
+
+                                                                                                                                                color: $purewhite;
+
+                                                                                                                                                i{
+
+                                                                                                                                                                color: $purewhite;
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                button[disable] {
+
+                                                                                                                                                background-color: $brightwhite;
+
+                                                                                                                                                color: $lightgrey;
+
+                                                                                                                                                cursor: not-allowed;
+
+ 
+
+                                                                                                                                                i[disable]{
+
+                                                                                                                                                                cursor: not-allowed;
+
+                                                                                                                                                                color: $lightgrey;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                i[disable]:before{
+
+                                                                                                                                                                content: "\F35D";
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                button[disable]:hover {
+
+                                                                                                                                                background-color: $brightwhite;
+
+                                                                                                                                                color: $lightgrey;
+
+                                                                                                                                                i[disable]{
+
+                                                                                                                                                                cursor: not-allowed;
+
+                                                                                                                                                                color: $lightgrey;
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                button[disable]:focus,
+
+                                                                                                                                button[disable]:active {
+
+                                                                                                                                                background: none;
+
+                                                                                                                                                outline: none;
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                sizedropdown.dropdownContent{
+
+                                                                                                                                                position: absolute;
+
+                                                                                                                                                background-color: $brightwhite;
+
+                                                                                                                                                min-width: 120px;
+
+                                                                                                                                                box-shadow: 0 8px 16px 0 rgba($black, 0.2);
+
+                                                                                                                                                height: 120px;
+
+                                                                                                                                                left: 46%;
+
+                                                                                                                                                margin: 75px auto;
+
+                                                                                                                                                z-index: 1;
+
+                                                                                                                                                opacity: 0;
+
+                                                                                                                                                visibility: hidden;
+
+                                                                                                                                                transition: all $animSlow;
+
+ 
+
+                                                                                                                                                .sizeName{
+
+                                                                                                                                                                display: block;
+
+                                                                                                                                                                position: relative;
+
+                                                                                                                                                                box-sizing: border-box;
+
+                                                                                                                                                                font-size: 14px;
+
+                                                                                                                                                                padding: 12px 0 7px 10px;
+
+                                                                                                                                                }
+
+ 
+
+                                                                                                                                                .sizeName:hover{
+
+                                                                                                                                                                background-color: $lightgrey;
+
+                                                                                                                                                                text-decoration: none;
+
+                                                                                                                                                                cursor: pointer;
+
+                                                                                                                                                }
+
+                                                                                                                                }
+
+ 
+
+                                                                                                                                sizedropdown.dropdownContent[active]{
+
+                                                                                                                                                opacity: 1;
+
+                                                                                                                                                visibility: visible;
+
+                                                                                                                                }
+
+                                                                                                                }
+
+ 
+
+                                                                                                                report:hover{
+
+                                                                                                                                background-color: rgba($black, 0.025);
+
+                                                                                                                }
+
+                                                                                                }
+
+                    }
+
+                    report[update]{
+
+                        color: $midblue;
+
+                        animation: blinker 1s linear infinite;
+
+                    }
+
+   
+
+                    @keyframes blinker {
+
+                        50%{
+
+                            opacity: 0;
+
+                        }
+
+                    }
+
+                                                                }
+
+                                                }
+
+        }
+
+        modalbox[disableclients]{
+
+                                                tabholder{
+
+                                                                tab{
+
+                                                                                masterclientids{
+
+                                                                                                display: none;
+
+                                                                                }
+
+                                                                }
+
+                                                }
+
+                                }
+
+ 
+
+                                modalbox[disablereports]{
+
+                                                tabholder{
+
+                                                                tab{
+
+                                                                                masterclientids{
+
+                                                                                                margin: 0;
+
+                                                                                }
+
+ 
+
+                                                                                reports{
+
+                                                                                                display: none;
+
+                                                                                }
+
+                                                                }
+
+                                                }
+
+                                }
+
+ 
+
+        modalfooter{
+
+            display: block;
+
+                        position: relative;
+
+                        font-size: 20px;
+
+                                                padding: 10px;
+
+                        line-height: 0;
+
+                                                text-align: center;
+
+                                                background-color: $purewhite;
+
+ 
+
+            //Save Button
+
+            save{
+
+                                                                display: inline-block;
+
+                                                                font-family: $robotomono;
+
+                                        font-size: 13px;
+
+                                                                line-height: 14px;
+
+                                        font-weight: 500;
+
+                                        letter-spacing: 5px;
+
+                text-transform: uppercase;
+
+                vertical-align: bottom;
+
+                align-self: center;
+
+                background-color: $midblue;
+
+                color: $white;
+
+                padding: 10px 30px;
+
+                                                                border: 0;
+
+                                                                outline: 0;
+
+                                                                border-radius: $standardBorderRadius;
+
+                cursor: pointer;
+
+                                                                @extend -transitionVeryQuick;
+
+            }
+
+ 
+
+                                                save[disabled]{
+
+                                                                opacity: 0.25;
+
+                                                                pointer-events: none;
+
+                                                }
+
+ 
+
+                                                save:hover {
+
+                                                                background-color: lighten($midblue, 2.5%);
+
+                                                                color: $purewhite;
+
+                                                }
+
+        }
+
+    }
+
+}

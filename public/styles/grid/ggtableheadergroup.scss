@@ -1,0 +1,155 @@
+/* gg tbl headergroup row cell:hover{
+
+                padding: 10px 20px;
+
+} */
+
+gg tbl headergroup {
+  display: table-header-group;
+
+  top: 0;
+}
+
+gg tbl headergroup row {
+  display: table-row;
+
+  top: 0;
+}
+
+gg tbl headergroup row cell {
+  top: 0;
+
+  font-size: 13px;
+
+  line-height: 13px;
+
+  text-transform: none;
+
+  z-index: 2;
+}
+
+gg tbl[sortable] headergroup row cell {
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+gg tbl[sortable] headergroup row cell flx {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  pointer-events: none;
+}
+
+gg tbl[sortable] headergroup row cell[type="nmbr"] flx {
+  justify-content: flex-end;
+}
+
+gg tbl[sortable] headergroup row cell val {
+  display: inline-block;
+
+  position: relative;
+
+  vertical-align: top;
+
+  pointer-events: none;
+}
+
+gg tbl[sortable] headergroup row cell sort {
+  display: inline-block;
+
+  position: relative;
+
+  float: right;
+
+  width: 0;
+
+  height: 13px;
+
+  margin-left: 0;
+
+  font: normal normal normal 24px/1 "Material Design Icons";
+
+  color: $midblue;
+
+  line-height: 13px;
+
+  vertical-align: top;
+
+  pointer-events: none;
+
+  overflow: hidden;
+
+  transition: all $animQuick;
+}
+
+gg tbl[sortable] headergroup row cell[sort] sort {
+  margin-left: 8px;
+
+  width: 10px;
+}
+
+gg tbl[sortable] headergroup row cell sort up,
+body tbl[sortable] headergroup row cell sort down {
+  display: block;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 10px;
+
+  height: 13px;
+}
+
+gg tbl[sortable] headergroup row cell sort up:before,
+body tbl[sortable] headergroup row cell sort down:before {
+  display: block;
+
+  position: absolute;
+
+  top: 0;
+
+  left: -7.5px;
+
+  width: 0;
+
+  height: 13px;
+}
+
+gg tbl[sortable] headergroup row cell sort up {
+  top: -4.5px;
+}
+
+gg tbl[sortable] headergroup row cell sort down {
+  top: 2.5px;
+}
+
+gg tbl[sortable] headergroup row cell[sort="up"] sort up:before {
+  opacity: 1;
+
+  content: "\F360";
+}
+
+gg tbl[sortable] headergroup row cell[sort="down"] sort up:before {
+  opacity: 0.125;
+
+  content: "\F360";
+}
+
+gg tbl[sortable] headergroup row cell[sort="up"] sort down:before {
+  opacity: 0.125;
+
+  content: "\F35D";
+}
+
+gg tbl[sortable] headergroup row cell[sort="down"] sort down:before {
+  opacity: 1;
+
+  content: "\F35D";
+}

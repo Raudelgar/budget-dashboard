@@ -1,0 +1,140 @@
+chart {
+  display: flex;
+
+  position: relative;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 100%;
+
+  height: calc(100% - 35px;);
+
+  svg {
+    overflow: visible;
+
+    text {
+      font-family: $robotomono;
+
+      font-size: 12px;
+
+      font-weight: 500;
+
+      text-transform: uppercase;
+
+      text-anchor: middle;
+
+      fill: $black;
+
+      user-select: none;
+
+      pointer-events: none;
+    }
+
+    g.grid {
+      path.domain {
+        stroke-width: 0;
+      }
+
+      g.tick {
+        line {
+          stroke: rgba($black, 0.25);
+        }
+      }
+    }
+
+    g.pathstack {
+      path {
+        fill-opacity: 0.67;
+
+        stroke-width: 0;
+
+        transition: fill-opacity $animQuick;
+      }
+
+      path:hover {
+        fill-opacity: 0.5;
+      }
+    }
+
+    g.stack {
+      path {
+        stroke-opacity: 0.67;
+      }
+
+      rect {
+        fill-opacity: 0.67;
+
+        transition: fill-opacity $animQuick;
+      }
+
+      rect:hover {
+        fill-opacity: 0.5;
+      }
+    }
+
+    g.axis {
+      g.tick {
+        line {
+          stroke: $black;
+        }
+
+        text {
+          text-anchor: end;
+        }
+      }
+
+      path.domain {
+        stroke: $black;
+      }
+    }
+
+    g.legend {
+      g.border rect {
+        fill: none;
+      }
+
+      text {
+        text-anchor: start;
+      }
+
+      g.item[inactive="true"] {
+        opacity: 0.25;
+      }
+
+      g.item {
+        transition: opacity $animQuick;
+
+        rect {
+          rx: 2;
+
+          ry: 2;
+
+          fill-opacity: 0.67;
+
+          transition: fill-opacity $animQuick;
+        }
+
+        rect.background {
+          opacity: 0;
+
+          cursor: pointer;
+        }
+
+        rect:not(.background) {
+          transition: fill-opacity $animQuick;
+
+          user-select: none;
+        }
+      }
+
+      g.item:hover,
+      g.item.over {
+        rect {
+          fill-opacity: 0.5;
+        }
+      }
+    }
+  }
+}
