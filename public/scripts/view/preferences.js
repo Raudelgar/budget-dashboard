@@ -468,9 +468,58 @@ const preferences = {
         }
     },
     reset: function(masterClientId){
+        if(preferences.vars.showHideReports && !preferences.vars.partialSavedClicked){
+            let client;
+            for(client in preferences.vars.reportsIndex){
+                let a = preferences.vars.reportsIndex[client].values;
+                for(let i =0; i < a.lenght; i++){
+                    for(let d of preferences.vars.reportsUpdateList[client]){
+                        if(d.reportid === a[i]){
+                            d.show = !d.show;
+                            let reportName = preferences.el.querySelector('[reportnameid="'+a[i]+'"]');
+                            let switchEl = preferences.el.querySelector('[reportswitchid="'+a[i]+'"]');
 
+                            if(reportName.getAttribute('update') === ''){
+                                reportName.removeAttribute('update');
+                            } else {
+                                reportName.setAttribute('update','');
+                            }
+
+                            if(switchEl.getAttribute('checked') === ''){
+                                switchEl.removeAttribute('checked');
+                            } else {
+                                switchEl.setAttribute('checked','');
+                            }
+                        }
+                    }
+                }
+            }
+            preferences.fini();
+        } else if(preferences.vars.partialSavedClicked){
+            if(preferences.vars.reportsIndex[masterClientId]){
+                let a = preferences.vars.reportsIndex[masterClientId].values;
+                for(let i =0; i < a.lenght; i++){
+                    let reportName = preferences.el.querySelector('[reportnameid="'+a[i]+'"]');
+
+                    if(reportName.getAttribute('update') === ''){
+                        reportName.removeAttribute('update');
+                    } else {
+                        reportName.setAttribute('update','');
+                    }
+                }
+            }
+        } else {
+            preferences.fini();
+        }
     },
     fini: function(){
-
+        preferences.vars.reportsIndex = {};
+        preferences.vars.reportsUpdateList = {};
+        preferences.vars.partialSavedClicked = false;
+        let saveEl = preferences.el.nextElementSibling.childNodes[0];
+        if(saveEl.hasAttribute('disabled')){
+            saveEl.removeAttribute('disabled');
+        }
+        popover.fini();
     }
 }
