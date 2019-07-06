@@ -64,7 +64,46 @@ const tooltip = {
                 }
                 s = `<title>${o.data.label}</title><items>${s}</items>`; 
                 break;
-            
+            case 'stackedArea':
+                let i, f = 0,t = 0;
+
+                for(i = 0,o.data.values.length;i++){
+                    let label = o.data.values[i].data.key;
+                    let value = o.data.value[i].data.values[o.data.index].val;
+
+                    if(value){
+                        let n = String(value);
+                        let c = n.length - n.indexOf('.') - 1;
+
+                        if(c <= n.length && f < c){
+                            f = c;
+                        }
+
+                        s += `<item><property>${label}:</property><value>${o.meta.pre}${value}${o.meta.post}</value></item>`;
+                        t += value;
+                    }
+                }
+
+                s = `<title>${o.data.label}</title><items>${s}<sum><property>Total:</property><value>${o.meta.pre}${t.toFixed(f)}${o.meta.post}</value></sum></items>`;
+                break;
+            case 'stackedBar':
+                for(let k in o.data.values){
+                    if(o.data.values[k]){
+                        s += `<item><property>${k}:</property><value>${o.data.values[k]}</value></item>`;
+                    }
+                }
+
+                s = `<title>${o.data.label}</title><items>${s}</items>`;
+                break;
+            case 'stackedNegativeBar':
+                for(let k in o.data.values){
+                    if(o.data.values[k]){
+                        s += `<item><property>${k}:</property><value>${o.meta.pre}${o.data.values[k]}${o.meta.post}</value></item>`;
+                    }
+                }
+                s = `<title>${o.data.label}</title><items>${s}</items>`;
+                break;
         }
+        tooltip.el.innerHTML = s;
     }
 }
