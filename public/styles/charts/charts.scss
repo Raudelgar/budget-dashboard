@@ -1,34 +1,21 @@
 chart {
   display: flex;
-
   position: relative;
-
   align-items: center;
-
   justify-content: center;
-
   width: 100%;
-
-  height: calc(100% - 35px;);
+  height: calc(100% - 35px);
 
   svg {
     overflow: visible;
-
     text {
       font-family: $robotomono;
-
       font-size: 12px;
-
       font-weight: 500;
-
       text-transform: uppercase;
-
       text-anchor: middle;
-
       fill: $black;
-
       user-select: none;
-
       pointer-events: none;
     }
 
@@ -47,9 +34,7 @@ chart {
     g.pathstack {
       path {
         fill-opacity: 0.67;
-
         stroke-width: 0;
-
         transition: fill-opacity $animQuick;
       }
 
@@ -65,12 +50,23 @@ chart {
 
       rect {
         fill-opacity: 0.67;
-
         transition: fill-opacity $animQuick;
       }
 
       rect:hover {
         fill-opacity: 0.5;
+      }
+      path.line {
+        fill: none;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        pointer-events: none;
+        transition: stroke-width $animQuick;
+      }
+
+      path.line[disabled] {
+        stroke-width: 0;
       }
     }
 
@@ -90,6 +86,14 @@ chart {
       }
     }
 
+    g.axis.yaxisRight {
+      opacity: 1;
+      transition: opacity $animQuick;
+    }
+    g.axis.yaxisRight[disabled] {
+      opacity: 0;
+    }
+
     g.legend {
       g.border rect {
         fill: none;
@@ -105,26 +109,20 @@ chart {
 
       g.item {
         transition: opacity $animQuick;
-
         rect {
           rx: 2;
-
           ry: 2;
-
           fill-opacity: 0.67;
-
           transition: fill-opacity $animQuick;
         }
 
         rect.background {
           opacity: 0;
-
           cursor: pointer;
         }
 
         rect:not(.background) {
           transition: fill-opacity $animQuick;
-
           user-select: none;
         }
       }

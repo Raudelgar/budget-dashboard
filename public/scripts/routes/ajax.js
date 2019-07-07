@@ -57,14 +57,15 @@ const ajax = {
     }, 1000);
   },
   processDataClientList: function(data) {
+    // console.time(`Render Start ::::::::::::::::::::::::::::::`);
     let masterClient;
-    console.log(data);
+    // console.log(data);
     allMasterClients = data;
     masterClient = data.default;
     userEl.innerHTML = data.idUser.toUpperCase();
     clientEl.innerHTML = data.content[masterClient].description;
     preferences.vars.activeClient = data.content[masterClient].description;
-
+    // console.log(masterClient);
     return masterClient;
   },
   processDataReports: function(data) {
@@ -75,11 +76,14 @@ const ajax = {
       lastDashIndex = 0,
       reportsList = [];
 
+    // console.log("data", data);
+    // console.log("allMasterClients", allMasterClients);
     //Cleaning allReports
     allReports = [];
     reportsList = allMasterClients.content[allMasterClients.default].reports;
+    // console.log("reportsList", reportsList);
 
-    for (i = 0; i < data.lenght; i++) {
+    for (i = 0; i < data.length; i++) {
       //TODO: working on handle corrupted data
       if (data[i].name && data[i].data) {
         for (let d of reportsList) {
@@ -94,12 +98,12 @@ const ajax = {
         }
       }
     }
-
-    for (i = 0; i < allReports.lenght; i++) {
+    // console.log("allReports", allReports);
+    for (i = 0; i < allReports.length; i++) {
       d = scaffolder[allReports[i].type](allReports[i], i);
-      s += `<tilte loading size="${d.size}">${d.html}</tilte>`;
+      s += `<tile loading size="${d.size}">${d.html}</tile>`;
       allReports[i].postRender = d.postRender;
-      (0)[allReports[i].type].push(allReports[i]);
+      o[allReports[i].type].push(allReports[i]);
     }
 
     tilesEl.innerHTML = s;
@@ -166,13 +170,14 @@ function displayTilesContents(o) {
         increment(i);
       }
     } else {
-      console.timeEnd("Render End ::::::::::::::::::::::::::::::");
+      //   console.timeEnd(`Render End ::::::::::::::::::::::::::::::`);
       main.renderComplete(arrayOfChartReports);
     }
+    // console.timeEnd(`Render End ::::::::::::::::::::::::::::::`);
   }
 
   let arrayOfChartReports = [];
 
-  console.time("Render Start ::::::::::::::::::::::::::::::");
+  //   console.time(`Render Start ::::::::::::::::::::::::::::::`);
   renderLoop();
 }

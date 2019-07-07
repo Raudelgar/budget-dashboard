@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <title>Budget-Dashboard</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-        <!-- <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css"> -->
-        <link href="./_fonts/mdi/css/materialdesignicons.min.css" rel="stylesheet">
-        <!-- build:css styles/bundle.css-->
-        <link href="./styles/bundle.css?cb=123" rel="stylesheet" >
-    </head>
-    <body>
-        <loader></loader>
-        <header loading>
-            <!-- <logo class="os-log">[LOGO]</logo> -->
-            <logo>[LOGO]</logo>
-            <title>Dashboard</title>
-            <userbar loading>
-                <client></client>
-                <user>
-                    <usericon></usericon>
-                    <userid></userid>
-                </user>
-                <buttons>
-                    <save disable></save>
-                    <settings></settings>
-                </buttons>
-            </userbar>
-        </header>
-        <content>
-            <tooltip></tooltip>
-            <tiles></tiles>
-        </content> 
-        <popover></popover>
-        
-        <!-- dependencies-->
-        <script src="./_dependencies/d3.v5.min.js"></script>
-        <!-- build:js scripts/bundle.js-->
-        <script src="./scripts/bundle.js?cb=123"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Budget-Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="//cdn.materialdesignicons.com/3.7.95/css/materialdesignicons.min.css"> -->
+    <link
+      href="./_fonts/mdi/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- build:css styles/bundle.css-->
+    <link href="./styles/bundle.css?cb=123" rel="stylesheet" />
+  </head>
+  <body>
+    <loader></loader>
+    <header loading>
+      <!-- <logo class="os-log">[LOGO]</logo> -->
+      <logo>[LOGO]</logo>
+      <title>Dashboard</title>
+      <userbar loading>
+        <client></client>
+        <user>
+          <usericon></usericon>
+          <userid></userid>
+        </user>
+        <buttons>
+          <save disable></save>
+          <settings></settings>
+        </buttons>
+      </userbar>
+    </header>
+    <content>
+      <tooltip></tooltip>
+      <tiles></tiles>
+    </content>
+    <popover></popover>
+
+    <!-- dependencies-->
+    <script src="./_dependencies/d3.v5.min.js"></script>
+    <script src="./_dependencies/moment.js"></script>
+    <!-- build:js scripts/bundle.js-->
+    <script src="./scripts/bundle.js?cb=123"></script>
+  </body>
 </html>

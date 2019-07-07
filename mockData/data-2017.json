@@ -16,39 +16,39 @@
         },
         "data":[
             {
-                "lable":"Rent",
+                "label":"Rent",
                 "value":659.00
             },
             {
-                "lable":"Internet",
+                "label":"Internet",
                 "value":45.56
             },
             {
-                "lable":"Energy",
+                "label":"Energy",
                 "value":60.00
             },
             {
-                "lable":"Phone",
+                "label":"Phone",
                 "value":120.00
             },
             {
-                "lable":"Water",
+                "label":"Water",
                 "value":35.00
             },
             {
-                "lable":"Car Lease",
+                "label":"Car Lease",
                 "value":250.00
             },
             {
-                "lable":"Grocery",
+                "label":"Grocery",
                 "value":400.00
             },
             {
-                "lable":"Gas",
+                "label":"Gas",
                 "value":80.00
             },
             {
-                "lable":"Others",
+                "label":"Others",
                 "value":200.00
             }
         ]
@@ -70,7 +70,7 @@
         },
         "data":[
             {
-                "lable":"2017-01-01 00:00:00.0",
+                "label":"2017-01-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":93.12,
@@ -84,7 +84,7 @@
                 }
             },
             {
-                "lable":"2017-02-01 00:00:00.0",
+                "label":"2017-02-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -98,7 +98,7 @@
                 }
             },
             {
-                "lable":"2017-03-01 00:00:00.0",
+                "label":"2017-03-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -112,7 +112,7 @@
                 }
             },
             {
-                "lable":"2017-04-01 00:00:00.0",
+                "label":"2017-04-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -126,7 +126,7 @@
                 }
             },
             {
-                "lable":"2017-05-01 00:00:00.0",
+                "label":"2017-05-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -140,7 +140,7 @@
                 }
             },
             {
-                "lable":"2017-06-01 00:00:00.0",
+                "label":"2017-06-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -154,7 +154,7 @@
                 }
             },
             {
-                "lable":"2017-07-01 00:00:00.0",
+                "label":"2017-07-01 00:00:00.0",
                 "values":{
                     "Rent":659.00,
                     "Internet":44.99,
@@ -168,7 +168,7 @@
                 }
             },
             {
-                "lable":"2017-08-01 00:00:00.0",
+                "label":"2017-08-01 00:00:00.0",
                 "values":{
                     "Rent":1403.03,
                     "Internet":100.69,
@@ -182,7 +182,7 @@
                 }
             },
             {
-                "lable":"2017-09-01 00:00:00.0",
+                "label":"2017-09-01 00:00:00.0",
                 "values":{
                     "Rent":908.00,
                     "Internet":44.99,
@@ -196,7 +196,7 @@
                 }
             },
             {
-                "lable":"2017-10-01 00:00:00.0",
+                "label":"2017-10-01 00:00:00.0",
                 "values":{
                     "Rent":912.07,
                     "Internet":44.99,
@@ -210,7 +210,7 @@
                 }
             },
             {
-                "lable":"2017-11-01 00:00:00.0",
+                "label":"2017-11-01 00:00:00.0",
                 "values":{
                     "Rent":912.07,
                     "Internet":44.99,
@@ -224,7 +224,7 @@
                 }
             },
             {
-                "lable":"2017-12-01 00:00:00.0",
+                "label":"2017-12-01 00:00:00.0",
                 "values":{
                     "Rent":912.07,
                     "Internet":44.99,
@@ -258,73 +258,73 @@
             {
                 "dataLine":[
                     {
-                        "lable":"2017-01-01 00:00:00.0",
+                        "label":"2017-01-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":4.16
                         }
                     },
                     {
-                        "lable":"2017-02-01 00:00:00.0",
+                        "label":"2017-02-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":1.05
                         }
                     },
                     {
-                        "lable":"2017-03-01 00:00:00.0",
+                        "label":"2017-03-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":2.58
                         }
                     },
                     {
-                        "lable":"2017-04-01 00:00:00.0",
+                        "label":"2017-04-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":2.47
                         }
                     },
                     {
-                        "lable":"2017-05-01 00:00:00.0",
+                        "label":"2017-05-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":4.36
                         }
                     },
                     {
-                        "lable":"2017-06-01 00:00:00.0",
+                        "label":"2017-06-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":4.18
                         }
                     },
                     {
-                        "lable":"2017-07-01 00:00:00.0",
+                        "label":"2017-07-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":3.65
                         }
                     },
                     {
-                        "lable":"2017-08-01 00:00:00.0",
+                        "label":"2017-08-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":1.25
                         }
                     },
                     {
-                        "lable":"2017-09-01 00:00:00.0",
+                        "label":"2017-09-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":1.30
                         }
                     },
                     {
-                        "lable":"2017-10-01 00:00:00.0",
+                        "label":"2017-10-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":5.12
                         }
                     },
                     {
-                        "lable":"2017-11-01 00:00:00.0",
+                        "label":"2017-11-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":4.42
                         }
                     },
                     {
-                        "lable":"2017-12-01 00:00:00.0",
+                        "label":"2017-12-01 00:00:00.0",
                         "values":{
                             "NATIONAL_AVERAGE":3.20
                         }
@@ -332,73 +332,73 @@
                 ],
                 "dataBar":[
                     {
-                        "lable":"2017-01-01 00:00:00.0",
+                        "label":"2017-01-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":0.00
                         }
                     },
                     {
-                        "lable":"2017-02-01 00:00:00.0",
+                        "label":"2017-02-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":0.00
                         }
                     },
                     {
-                        "lable":"2017-03-01 00:00:00.0",
+                        "label":"2017-03-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":0.00
                         }
                     },
                     {
-                        "lable":"2017-04-01 00:00:00.0",
+                        "label":"2017-04-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":0.00
                         }
                     },
                     {
-                        "lable":"2017-05-01 00:00:00.0",
+                        "label":"2017-05-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":0.43
                         }
                     },
                     {
-                        "lable":"2017-06-01 00:00:00.0",
+                        "label":"2017-06-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":3.17
                         }
                     },
                     {
-                        "lable":"2017-07-01 00:00:00.0",
+                        "label":"2017-07-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":4.25
                         }
                     },
                     {
-                        "lable":"2017-08-01 00:00:00.0",
+                        "label":"2017-08-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":3.98
                         }
                     },
                     {
-                        "lable":"2017-09-01 00:00:00.0",
+                        "label":"2017-09-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":3.65
                         }
                     },
                     {
-                        "lable":"2017-10-01 00:00:00.0",
+                        "label":"2017-10-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":4.09
                         }
                     },
                     {
-                        "lable":"2017-11-01 00:00:00.0",
+                        "label":"2017-11-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":3.74
                         }
                     },
                     {
-                        "lable":"2017-12-01 00:00:00.0",
+                        "label":"2017-12-01 00:00:00.0",
                         "values":{
                             "HOUSE_INCOME":3.21
                         }
@@ -424,7 +424,7 @@
         },
         "data":[
             {
-                "lable":"2017-01-01 00:00:00.0",
+                "label":"2017-01-01 00:00:00.0",
                 "values":{
                     "Tuna":5.92,
                     "Turkey":7.74,
@@ -446,7 +446,7 @@
                 }
             },
             {
-                "lable":"2017-02-01 00:00:00.0",
+                "label":"2017-02-01 00:00:00.0",
                 "values":{
                     "Tuna":7.92,
                     "Turkey":6.74,
@@ -468,7 +468,7 @@
                 }
             },
             {
-                "lable":"2017-03-01 00:00:00.0",
+                "label":"2017-03-01 00:00:00.0",
                 "values":{
                     "Tuna":3.92,
                     "Turkey":2.74,
@@ -490,7 +490,7 @@
                 }
             },
             {
-                "lable":"2017-04-01 00:00:00.0",
+                "label":"2017-04-01 00:00:00.0",
                 "values":{
                     "Tuna":4.92,
                     "Turkey":3.74,
@@ -512,7 +512,7 @@
                 }
             },
             {
-                "lable":"2017-05-01 00:00:00.0",
+                "label":"2017-05-01 00:00:00.0",
                 "values":{
                     "Tuna":6.92,
                     "Turkey":4.74,
@@ -534,7 +534,7 @@
                 }
             },
             {
-                "lable":"2017-06-01 00:00:00.0",
+                "label":"2017-06-01 00:00:00.0",
                 "values":{
                     "Tuna":7.92,
                     "Turkey":1.74,
@@ -556,7 +556,7 @@
                 }
             },
             {
-                "lable":"2017-07-01 00:00:00.0",
+                "label":"2017-07-01 00:00:00.0",
                 "values":{
                     "Tuna":4.92,
                     "Turkey":4.74,
@@ -578,7 +578,7 @@
                 }
             },
             {
-                "lable":"2017-08-01 00:00:00.0",
+                "label":"2017-08-01 00:00:00.0",
                 "values":{
                     "Tuna":1.92,
                     "Turkey":6.74,
@@ -600,7 +600,7 @@
                 }
             },
             {
-                "lable":"2017-09-01 00:00:00.0",
+                "label":"2017-09-01 00:00:00.0",
                 "values":{
                     "Tuna":7.92,
                     "Turkey":4.74,
@@ -622,7 +622,7 @@
                 }
             },
             {
-                "lable":"2017-10-01 00:00:00.0",
+                "label":"2017-10-01 00:00:00.0",
                 "values":{
                     "Tuna":5.92,
                     "Turkey":7.74,
@@ -644,7 +644,7 @@
                 }
             },
             {
-                "lable":"2017-11-01 00:00:00.0",
+                "label":"2017-11-01 00:00:00.0",
                 "values":{
                     "Tuna":5.92,
                     "Turkey":1.74,
@@ -666,7 +666,7 @@
                 }
             },
             {
-                "lable":"2017-12-01 00:00:00.0",
+                "label":"2017-12-01 00:00:00.0",
                 "values":{
                     "Tuna":7.92,
                     "Turkey":9.74,
@@ -706,51 +706,51 @@
         },
         "data":[
             {
-                "lable":"2017-01-01 00:00:00.0",
+                "label":"2017-01-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-02-01 00:00:00.0",
+                "label":"2017-02-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-03-01 00:00:00.0",
+                "label":"2017-03-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-04-01 00:00:00.0",
+                "label":"2017-04-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-05-01 00:00:00.0",
+                "label":"2017-05-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-06-01 00:00:00.0",
+                "label":"2017-06-01 00:00:00.0",
                 "value":0.00
             },
             {
-                "lable":"2017-07-01 00:00:00.0",
+                "label":"2017-07-01 00:00:00.0",
                 "value":40.23
             },
             {
-                "lable":"2017-08-01 00:00:00.0",
+                "label":"2017-08-01 00:00:00.0",
                 "value":85.00
             },
             {
-                "lable":"2017-09-01 00:00:00.0",
+                "label":"2017-09-01 00:00:00.0",
                 "value":78.23
             },
             {
-                "lable":"2017-10-01 00:00:00.0",
+                "label":"2017-10-01 00:00:00.0",
                 "value":136.88
             },
             {
-                "lable":"2017-11-01 00:00:00.0",
+                "label":"2017-11-01 00:00:00.0",
                 "value":93.23
             },
             {
-                "lable":"2017-12-01 00:00:00.0",
+                "label":"2017-12-01 00:00:00.0",
                 "value":28.98
             }
         ]
@@ -772,66 +772,66 @@
         },
         "data":[
             {
-                "lable":"Amex Express",
+                "label":"Amex Express",
                 "values":{
                     "Capacity (Total)":15000.00,
-                    "Credit (Available)": 8563.25,
+                    "Credit (Availabel)": 8563.25,
                     "Balance (Debt)": 6436.75
                 }
             },
             {
-                "lable":"Chase Freedom",
+                "label":"Chase Freedom",
                 "values":{
                     "Capacity (Total)":10000.00,
-                    "Credit (Available)": 9412.37,
+                    "Credit (Availabel)": 9412.37,
                     "Balance (Debt)": 587.63
                 }
             },
             {
-                "lable":"Discover",
+                "label":"Discover",
                 "values":{
                     "Capacity (Total)":7000.00,
-                    "Credit (Available)": 5987.10,
+                    "Credit (Availabel)": 5987.10,
                     "Balance (Debt)": 1012.90
                 }
             },
             {
-                "lable":"Capital One",
+                "label":"Capital One",
                 "values":{
                     "Capacity (Total)":2500.00,
-                    "Credit (Available)": 2500.00,
+                    "Credit (Availabel)": 2500.00,
                     "Balance (Debt)": 0.00
                 }
             },
             {
-                "lable":"Citi",
+                "label":"Citi",
                 "values":{
                     "Capacity (Total)":25000.00,
-                    "Credit (Available)": 20147.58,
+                    "Credit (Availabel)": 20147.58,
                     "Balance (Debt)": 4852.42
                 }
             },
             {
-                "lable":"Amazon",
+                "label":"Amazon",
                 "values":{
                     "Capacity (Total)":8500.00,
-                    "Credit (Available)": 2467.21,
+                    "Credit (Availabel)": 2467.21,
                     "Balance (Debt)": 6032.79
                 }
             },
             {
-                "lable":"Costco",
+                "label":"Costco",
                 "values":{
                     "Capacity (Total)":3000.00,
-                    "Credit (Available)": 2950.00,
+                    "Credit (Availabel)": 2950.00,
                     "Balance (Debt)": 50.00
                 }
             },
             {
-                "lable":"Bank of America",
+                "label":"Bank of America",
                 "values":{
                     "Capacity (Total)":17000.00,
-                    "Credit (Available)": 12587.89,
+                    "Credit (Availabel)": 12587.89,
                     "Balance (Debt)": 4412.11
                 }
             }

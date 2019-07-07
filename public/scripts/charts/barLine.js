@@ -48,10 +48,12 @@ function BarLineChart(params){
                             let keyBar = Object.keys(d.dataBar[i].values)[0];
                             let keyLine = Object.keys(d.dataLine[i].values)[0];
 
-                            barObj.key = keyBar;
+							barObj.key = keyBar;
+							//TODO: Handle different types of numbers
                             //this is temporary converting the numbers from billions
                             let value = Number(d.dataBar[i].values[keyBar]);
-                            barObj.value = Number(formatter.convertToBillion(value).toFixed(1));
+							// barObj.value = Number(formatter.convertToBillion(value).toFixed(1));
+							barObj.value = value;
                             o.dataBar.push(barObj);
 
                             lineObj.key = keyLine;
@@ -374,6 +376,8 @@ function BarLineChart(params){
                     }
 
                     if (yLeftTransformArr.length >= yRightTransformArr.length) {
+						console.log(yLeftTransformArr);
+						console.log(yRightTransformArr);
                         left = true;
                     } else {
                         right = true;

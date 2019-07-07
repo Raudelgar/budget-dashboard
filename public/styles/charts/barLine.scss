@@ -3,15 +3,10 @@ chart.barLine {
     g.stack {
       path.line {
         fill: none;
-
         stroke-width: 3;
-
         stroke-linecap: round;
-
         stroke-linejoin: round;
-
         pointer-events: none;
-
         transition: stroke-width $animQuick;
       }
 
@@ -22,7 +17,6 @@ chart.barLine {
 
     g.axis {
       opacity: 1;
-
       transition: opacity $animQuick;
     }
 
