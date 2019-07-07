@@ -55,7 +55,7 @@ let scssArr = [
 
 //compile SASS
 function taskScss() {
-  return src(scssArr)
+  return src(file.mainScss)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on("error", sass.logError)

@@ -1,32 +1,52 @@
 //import core
-@import './core/anim.scss';
-@import './core/behavior.scss';
-@import './core/colors.scss';
-@import './core/fonts.scss';
-@import './core/var.scss';
+@import "core/var";
+@import "core/colors";
+@import "core/fonts";
+@import "core/behavior";
+@import "core/anim";
 
 //import view
-@import './view/content.scss';
-@import './view/header.scss';
+@import "view/content";
+@import "view/header";
+@import "view/loader";
+@import "view/popover";
+@import "view/preferences";
+@import "view/tiles";
+
+//import charts
+@import "charts/charts";
+@import "charts/donut";
+@import "charts/barLine";
+@import "charts/stackednegativebar";
+
+//import grids
+@import "grid/ggmain";
+@import "grid/ggtable";
+@import "grid/ggtablecolumngroup";
+@import "grid/ggtableheadergroup";
+@import "grid/ggtablelargestrow";
+@import "grid/ggtablelargestrow";
+@import "grid/ggtablerowgroup";
+@import "grid/ggtablesummedrow";
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-body{
-    display: block;
-    min-width: 800px;
-    min-height: 375px;
-    font-family: $roboto;
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-    color: $black;
-    background-color: $darkwhite;
-    overflow-x: hidden;
-    overflow-y: auto;
+body {
+  display: block;
+  min-width: 800px;
+  min-height: 375px;
+  font-family: $roboto;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  background-color: $darkwhite;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-::selection{
-    background: $blue;
-    color: $purewhite;
-    text-shadow: none;
+::selection {
+  background: $blue;
+  color: $purewhite;
+  text-shadow: none;
 }

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server":"nodemon server.js",
+    "server": "nodemon server.js",
     "client": "gulp",
     "app": "concurrently \"npm run server\" \"npm run client\" "
   },
@@ -23,7 +23,7 @@
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "del": "^5.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",

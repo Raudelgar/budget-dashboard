@@ -1,6 +1,3 @@
-import { access } from "fs";
-import { all } from "q";
-
 const preferences = {
     el: null,
     vars: {

@@ -1,68 +1,71 @@
 {
-    "content":{
-        "2017":{
-            "year":2017,
-            "description":"2017 Expenses",
-            "currency":"USD",
-            "reportLocks":false,
-            "reports":[
-                {
-                    "reportid":1,
-                    "name":"Current Month Average House Expenses",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"donut"
-                },
-                {
-                    "reportid":2,
-                    "name":"Monthly Average House Expenses",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"stackedBar"
-                },
-                {
-                    "reportid":3,
-                    "name":"House Income vs National Average",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"barLine"
-                },
-                {
-                    "reportid":4,
-                    "name":"Monthly Average Grocery Expenses",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"stackedArea"
-                },
-                {
-                    "reportid":5,
-                    "name":"Monthly Average Gas Expenses",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"bar"
-                },
-                {
-                    "reportid":6,
-                    "name":"Credit Cards Debts",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"stackedNegativeBar"
-                },
-                {
-                    "reportid":7,
-                    "name":"Tax Record",
-                    "include":true,
-                    "show":true,
-                    "table":false,
-                    "type":"grid"
-                }
-            ]
+  "content": {
+    "2017": {
+      "year": 2017,
+      "description": "2017 Expenses",
+      "currency": "USD",
+      "reportLocks": false,
+      "reports": [
+        {
+          "reportid": 1,
+          "name": "Current Month Average House Expenses",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "donut"
+        },
+        {
+          "reportid": 2,
+          "name": "Monthly Average House Expenses",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "stackedBar"
+        },
+        {
+          "reportid": 3,
+          "name": "House Income vs National Average",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "barLine"
+        },
+        {
+          "reportid": 4,
+          "name": "Monthly Average Grocery Expenses",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "stackedArea"
+        },
+        {
+          "reportid": 5,
+          "name": "Monthly Average Gas Expenses",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "bar"
+        },
+        {
+          "reportid": 6,
+          "name": "Credit Cards Debts",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "stackedNegativeBar"
+        },
+        {
+          "reportid": 7,
+          "name": "Tax Record",
+          "include": true,
+          "show": true,
+          "table": false,
+          "type": "grid"
         }
+      ]
     }
+  },
+  "idUser": "user1",
+  "idDesk": "1",
+  "default": "2017"
 }
